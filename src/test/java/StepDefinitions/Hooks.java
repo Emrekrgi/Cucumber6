@@ -22,12 +22,12 @@ public class Hooks {
         ExcelUtility.writeToExcel("src/test/java/ApachePOI/resource/SenaryoSonuclari3.xlsx",
                 senaryo);
 
-        // extent reportun plugini aktif iken açık kalsın
-        if (senaryo.isFailed()){
-            TakesScreenshot ts=((TakesScreenshot) GWD.getDriver());
-            byte[] hafizadakiHali=ts.getScreenshotAs(OutputType.BYTES);
-            senaryo.attach(hafizadakiHali, "image/png", "screenshot name");
-        }
+       // // extent reportun plugini aktif iken açık kalsın
+       // if (senaryo.isFailed()){
+       //     TakesScreenshot ts=((TakesScreenshot) GWD.getDriver());
+       //     byte[] hafizadakiHali=ts.getScreenshotAs(OutputType.BYTES);
+       //     senaryo.attach(hafizadakiHali, "image/png", "screenshot name");
+       // }
 
         //System.out.println("Senaryo bitti ?");
         // doğru çalışırsa burada quiti çağıracağım
