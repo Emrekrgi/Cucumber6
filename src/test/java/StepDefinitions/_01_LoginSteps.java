@@ -41,6 +41,7 @@ public class _01_LoginSteps {
 
          dc.verifyContainsText(dc.txtTechnoStudy,"Techno Study");
 
+
         //System.out.println("girildiği test edildi");
     }
 
